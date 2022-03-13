@@ -1,18 +1,21 @@
+const car = {
+    name: 'Ford',
+    age: 12,
+    broken: true,
+    showName(): string {
+        return this.name;
+    }
+};
 interface Vehicle {
     name: string; 
     age: number; 
     broken: boolean;
+    showName(): string;
 }
 
-const car = {
-    name: 'Ford',
-    age: 12,
-    broken: true
-};
 
-// interface with destructuring
-const printVehicle = ({ name, age }: Vehicle): void => {
-    console.log(name, age)
+const printVehicleDetails = (vehicle: Vehicle): any => {
+    return vehicle.showName()
 };  
 
-console.log(printVehicle(car))
+console.log(printVehicleDetails(car))

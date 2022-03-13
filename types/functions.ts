@@ -51,7 +51,7 @@ const profile = {
     }
 };
 
-const { firstName, coords: { x, y } }: { firstName: string; coords : { x: number; y: number; } } = profile;
+const { firstName, showName, coords: { x, y } }: { firstName: string; showName(name: string): void; coords : { x: number; y: number; } } = profile;
 
 
 

@@ -1,7 +1,7 @@
 // type alias
-type Thing = [string, boolean, string];
+type Thing1 = [string, boolean, string];
 
-const tuple2: Thing = ['fdsa', false, '432423'];
-const tuple3: Thing = ['dfksfnskl', true, 'jfkdasdfjn'];
+const tuple2: Thing1 = ['fdsa', false, '432423'];
+const tuple3: Thing1 = ['dfksfnskl', true, 'jfkdasdfjn'];
 
 
