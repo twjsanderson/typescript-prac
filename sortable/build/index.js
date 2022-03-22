@@ -1,6 +1,5 @@
 "use strict";
-console.log('fsdfds');
-const doSomething = () => {
-    console.log(67869070);
+var doSomething = function () {
+    return 'ok it asds';
 };
-doSomething();
+console.log(doSomething());

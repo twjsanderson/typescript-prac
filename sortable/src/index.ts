@@ -1,7 +1,7 @@
-console.log('fsdfds')
 
-const doSomething = () => {
-    console.log(67869070)
+const doSomething = (): string => {
+    return 'ok it asds'
 }
 
-doSomething() 
+
+console.log(doSomething());

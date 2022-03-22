@@ -3,13 +3,12 @@
   "description": "to create tsconfig.json\r run tsc --init",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "dependencies": {
-    "concurrently": "^7.0.0",
-    "nodemon": "^2.0.15"
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.19.0"
   },
   "scripts": {
-    "start:build": "tsx -w",
+    "start:build": "tsc -w",
     "start:run": "nodemon build/index.js",
     "start": "concurrently npm:start:*"
   },

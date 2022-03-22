@@ -19,5 +19,41 @@ with nodemon and concurrently
     "start": "concurrently npm:start:*"
   },
 
-start runs concurrently and looks for all start scripts with anything after them (Ie. after the colons)
+start - runs concurrently and looks for all start scripts with anything after them (Ie. after the colons)
 
+-----------------------
+union operators 
+
+const infor: number[] | string = [1,2 3, 4]
+
+will only allow methods that both types can use
+ie. string and array don't both have .push() so your cant use .push() on infor variable
+
+You could use a type guard conitional to help when using various methods
+
+if (infor instanceof Array) {
+  // use array methods
+}
+
+--------------
+
+enums - enumeration an objkect that stores data, similar to Objects
+
+const res = {
+  away: 'A',
+  home: 'H'
+}
+
+into enum 
+
+enum Res = {
+  away = 'A';
+  home = 'H';
+}
+
+// whatever we return it will be one of the values from the enum properties
+const go = (): Res => {
+  if (val === 'win') {
+    return Res.home;
+  }
+}
