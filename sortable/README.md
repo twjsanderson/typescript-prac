@@ -57,3 +57,51 @@ const go = (): Res => {
     return Res.home;
   }
 }
+
+// array of arrays
+type MatchData = [Date, string, MatchResult, string]
+
+// we can then use ->
+data: MatchData[]
+
+// the above code will assume its an array of arrays with the following data types inside each sub-array
+
+// Generics
+They acts as arguments (with predefined types) that can be used anywhere in a function or class
+
+class Thing<HoldAnything> {
+  data:typeofdata;
+}
+
+const thisThing = new Thing<number>();
+const thisThing2 = new Thing<string>();
+
+Usually refer to generic as T
+
+
+function print<T>(arr: T[]): void {
+  // some code
+}
+
+print<string>(['12', '23'])
+
+// 2d array
+function print1<T>(arr: T[][]): void {
+  // some code
+}
+
+print1<string[]>([['12'], ['23']])
+
+
+// when result has method that may or may not be there
+interface House {
+  print(): void;
+}
+
+function goHouse<T extends House>(arr: T[]) {
+  return arr[0].print();
+}
+
+goHouse<NewHouse>([someObj, anotherObj])
+
+
